@@ -6,15 +6,11 @@ import (
 )
 
 type Player struct {
+	GridSize          int
+	TotalShips        int
 	TotalMissiles     int
 	RemainingMissiles int
 	PlayerBattleSpace grid.Grid
-	Positions         []position.Position
+	ShipPositions     []position.Position
+	MissilePositions  []position.Position
 }
-
-//func New(totMissiles int) *Player {
-//	player := Player{
-//		TotalMissiles:     totMissiles,
-//		RemainingMissiles: totMissiles,
-//	}
-//}
